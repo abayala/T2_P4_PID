@@ -16,7 +16,10 @@ public:
   double Kp;
   double Ki;
   double Kd;
-
+  /*
+  * Init flags
+  */
+  bool is_init;
   /*
   * Constructor
   */
@@ -41,6 +44,10 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+  /*
+  * Perform one iteration or computation of the controller
+  */
+  double run ( );
 };
 
 #endif /* PID_H */
