@@ -12,7 +12,7 @@ PID::~PID() {}
 
 void PID::Init(double Kp_in, double Ki_in, double Kd_in) {
     Kp = Kp_in;
-    Ki = Kd_in;
+    Ki = Ki_in;
     Kd = Kd_in;
     i_error = std::numeric_limits<double>::max ( );
     d_error = std::numeric_limits<double>::max ( );
@@ -36,11 +36,7 @@ void PID::UpdateError(double cte_in) {
 }
 
 double PID::TotalError() {
-    return i_error;
+     return -Kp * p_error - Kd * d_error - Ki * i_error;
 }
 
-double PID::run ( )
-{
-    return -Kp * p_error - Kd * d_error - Ki * i_error;
-}
 
