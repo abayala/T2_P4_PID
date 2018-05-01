@@ -8,7 +8,7 @@ The provided simulation contains sharp turns and straight parts in the track.
 The cross track error, is provided by the simulator, and represents the discrepancy of the position of the car in the road with respect to the center of the road. 
 As taught in the lessons the PID controller implemented can have the form:
 
-car_steering_angle = -kp*cte - ki*cumulative_cte - kd*differential_error
+car_steering_angle = - kp * cte - ki * cumulative_cte - kd * differential_error
 
 
 
