@@ -1,4 +1,5 @@
 # CarND-Controls-PID
+---
 Self-Driving Car Engineer Nanodegree Program
 
 The objective of this project is to implement a PID controler that tries to drive a car in the center of the road, in a smooth manner and without getting off track.
@@ -8,7 +9,8 @@ The cross track error, is provided by the simulator, and represents the discrepa
 As taught in the lessons the PID controller implemented can have the form:
 
 car_steering_angle = -kp*cte - ki*cumulative_cte - kd*differential_error
----
+
+
 
 ## Variable explanations:
 kp: Is the proportional gain, and for our case it will affect how strong we steer or react to reach the center fo the lane
